@@ -1,7 +1,5 @@
 # Weather matrix widget
 
-[![DSH plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com)
-
 A floating tile-mosaic weather card for the DSH Web UI: the left region is a
 lattice of small square tiles where the weather is drawn by lighting tiles (gray
 cloud tiles that flow across the lattice, cyan rain tiles, white snow tiles, an
