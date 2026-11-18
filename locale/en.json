@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Weather matrix",
+    "description": "A floating dot-matrix weather card that animates the current sky and shows the hourly and 3-day forecast."
+  }
+}

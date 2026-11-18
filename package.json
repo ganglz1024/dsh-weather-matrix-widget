@@ -1,0 +1,62 @@
+{
+  "name": "dsh-weather-matrix-widget",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Floating pixel-matrix weather widget for the DSH Web UI: an animated tile scene with clouds, rain, snow and sun/moon, hourly and 3-day forecast, city search, custom sizes and a minimized pill.",
+  "license": "MIT",
+  "author": {
+    "name": "Kotal_gang",
+    "url": "https://github.com/ganglz1024"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganglz1024/dsh-weather-matrix-widget.git"
+  },
+  "homepage": "https://github.com/ganglz1024/dsh-weather-matrix-widget#readme",
+  "bugs": {
+    "url": "https://github.com/ganglz1024/dsh-weather-matrix-widget/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "weather",
+    "widget",
+    "pixel-art",
+    "dot-matrix",
+    "ui"
+  ],
+  "engines": {
+    "node": ">=22.12.0",
+    "dsh": "^0.2.0-rc.1"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "LICENSE",
+    "LICENSE-Nunito.txt",
+    "README.md",
+    "docs/*.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ]
+    }
+  }
+}
